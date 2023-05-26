@@ -1,5 +1,7 @@
 # 30-DAYS-OF-DEVOPS
 
+## https://www.youtube.com/@devopsshack
+
 ## Day 1-5: Introduction to DevOps 🔄
 
 Day 1: 🔄 DevOps explained - Overview of DevOps principles, culture, and benefits. 
