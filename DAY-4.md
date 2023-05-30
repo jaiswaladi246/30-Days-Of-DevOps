@@ -60,8 +60,6 @@ java -jar Jenkins.war  --httpPort=8081
 ```
 ### **--- INSTALL JENKINS ON WINDOWS ---**
 
-# Installing Jenkins on Windows
-
 Follow these step-by-step instructions to install Jenkins on your Windows machine:
 
 1. Visit the official Jenkins website at [https://www.jenkins.io/](https://www.jenkins.io/) and go to the "Download" section.
