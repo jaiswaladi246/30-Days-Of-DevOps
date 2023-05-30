@@ -11,16 +11,16 @@ CI is a software development practice that involves frequently integrating code 
 Real-World Scenario for CI:
 
 ![alt text](https://github.com/jaiswaladi246/30-Days-Of-DevOps/blob/main/Images/1.png?raw=true)
-- Feature-1 → Assigned to Developer1 → Commits code once done
-- Feature-2 → Assigned to Developer2 → Commits code once done
-- Feature-3 → Assigned to Developer3 → Commits code once done
+- `Feature-1` → Assigned to Developer1 → Commits code once done
+- `Feature-2` → Assigned to Developer2 → Commits code once done
+- `Feature-3` → Assigned to Developer3 → Commits code once done
 
 When Commit is done by all, then the code for all the features is combined or integrated. This process of adding different features code and building as well as testing at the same time without affecting or causing problems is CI.
 
-1. Code Commit: Developers write code and commit their changes to a version control system (such as Git).
-2. Build: The CI server retrieves the latest code changes from the repository and builds the application. This step involves compiling code, resolving dependencies, and creating executable artifacts.
-3. Automated Tests: The CI server runs a suite of automated tests to verify the integrity of the codebase. This includes unit tests, integration tests, and other forms of automated testing.
-4. Reporting: The CI server provides feedback to the development team, indicating whether the build and tests were successful or if any issues were found.
+1. `Code Commit`: Developers write code and commit their changes to a version control system (such as Git).
+2. `Build`: The CI server retrieves the latest code changes from the repository and builds the application. This step involves compiling code, resolving dependencies, and creating executable artifacts.
+3. `Automated Tests`: The CI server runs a suite of automated tests to verify the integrity of the codebase. This includes unit tests, integration tests, and other forms of automated testing.
+4. `Reporting`: The CI server provides feedback to the development team, indicating whether the build and tests were successful or if any issues were found.
 
 ## Continuous Deployment (CD) / Continuous Delivery (CD)
 
@@ -31,8 +31,8 @@ Company XYZ is a software development company that has adopted a DevOps approach
 
 In this scenario, CD is implemented as follows:
 
-1. Version Control: The development team uses a version control system like Git to manage their source code. They create different branches for features, bug fixes, and releases.
-2. Automated Build: Whenever a developer completes a feature or a bug fix, they merge their changes into the main development branch. The source code is then automatically built using a build automation tool like Jenkins.
-3. Continuous Integration: Once the code is successfully built, it is automatically integrated with the existing codebase. Automated tests are triggered to ensure that the new changes haven't introduced any regressions or issues.
-4. Artifact Repository: After successful integration and passing the tests, the build artifacts (e.g., compiled binaries, libraries) are stored in an artifact repository such as JFrog Artifactory.
+1. `Version Control`: The development team uses a version control system like Git to manage their source code. They create different branches for features, bug fixes, and releases.
+2. `Automated Build`: Whenever a developer completes a feature or a bug fix, they merge their changes into the main development branch. The source code is then automatically built using a build automation tool like Jenkins.
+3. `Continuous Integration`: Once the code is successfully built, it is automatically integrated with the existing codebase. Automated tests are triggered to ensure that the new changes haven't introduced any regressions or issues.
+4. `Artifact Repository`: After successful integration and passing the tests, the build artifacts (e.g., compiled binaries, libraries) are stored in an artifact repository such as JFrog Artifactory.
 5. Deployment Pipeline: The deployment pipeline is set up to automatically deploy the built artifacts to
