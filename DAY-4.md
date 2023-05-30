@@ -2,7 +2,7 @@
 
 Jenkins is an open-source automation server that allows you to automate various tasks in your software development workflow, such as building, testing, and deploying applications. It provides a web-based interface and supports a wide range of plugins for integrating with different tools and technologies.
 
-### ** REAL WORLD SCENARIO ** ###
+###  REAL WORLD SCENARIO  ###
 Let's consider a real-world scenario where Jenkins is used in a typical software development workflow:
 
 1. **Version Control**: Developers commit their code changes to a version control system like Git.
