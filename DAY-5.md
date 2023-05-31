@@ -18,9 +18,7 @@ Here are some key features of SonarQube:
 By using SonarQube, development teams can proactively identify and address code issues, improve code maintainability, enhance security, and ensure adherence to coding standards. It helps foster a culture of quality within development teams and promotes the delivery of robust and reliable software.
 ```
 
-Sure! Here's the provided text converted to Markdown format:
 
-```markdown
 --- Docker Installation ---
 
 ```shell
