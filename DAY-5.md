@@ -59,28 +59,28 @@ A software development team is working on a complex web application project with
 
 ## Steps
 
-1. **Integration with CI/CD Pipeline:**  
+### 1. **Integration with CI/CD Pipeline:**  
    The team integrates SonarQube into their CI/CD pipeline, ensuring that code analysis is performed automatically with every build. They configure their build tool to trigger SonarQube analysis after the code compilation step.
 
-2. **Static Code Analysis:**  
+### 2. **Static Code Analysis:**  
    During each build, SonarQube performs static code analysis on the source code. It scans the codebase for bugs, vulnerabilities, code smells, and code duplications.
 
-3. **Quality Reports and Dashboards:**  
+### 3. **Quality Reports and Dashboards:**  
    SonarQube generates detailed quality reports and provides a dashboard that highlights code issues, quality metrics, and trends over time. The team can easily access these reports to gain insights into the codebase's overall quality and track improvements.
 
-4. **Issue Management:**  
+### 4. **Issue Management:**  
    SonarQube categorizes code issues by severity and provides detailed information about each issue. The team can prioritize and address critical issues promptly to prevent potential bugs and security vulnerabilities.
 
-5. **Code Review and Collaboration:**  
+### 5. **Code Review and Collaboration:**  
    SonarQube facilitates code review and collaboration within the team. Developers can review the SonarQube reports, identify areas for improvement, and discuss solutions to address code issues.
 
-6. **Enforcement of Coding Standards:**  
+### 6. **Enforcement of Coding Standards:**  
    SonarQube enforces coding standards by checking code against predefined rules and quality profiles. The team configures SonarQube to match their project's specific requirements and coding standards, ensuring consistent code quality across the development team.
 
-7. **Continuous Improvement:**  
+### 7. **Continuous Improvement:**  
    With SonarQube's insights and reports, the team continuously improves the code quality. They identify recurring issues, refactor code, and apply best practices to prevent similar issues in the future.
 
-8. **Monitoring Code Quality Trends:**  
+### 8. **Monitoring Code Quality Trends:**  
    The team regularly monitors code quality trends using SonarQube's reports and dashboards. They can identify improvements or regressions in code quality over time and take appropriate actions to maintain or enhance the overall quality.
 
 By incorporating SonarQube into their development workflow, the team can proactively identify and address code issues, improve code maintainability, enhance security, and adhere to coding standards. SonarQube helps the team foster a culture of quality and continuous improvement, leading to the delivery of robust and reliable software.
