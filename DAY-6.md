@@ -6,7 +6,39 @@ OWASP Dependency Check is a software composition analysis (SCA) tool that identi
 
 ## Installation
 
-You can install OWASP Dependency Check using various methods:
+### Setting up OWASP Dependency Check in Jenkins
+
+To download and set up OWASP Dependency Check in Jenkins, you can follow these steps:
+
+1. Open Jenkins and navigate to the Jenkins home page.
+
+2. Click on "Manage Jenkins" in the left-hand sidebar.
+
+3. Select "Manage Plugins" from the options.
+
+4. In the "Available" tab, search for "OWASP Dependency-Check Plugin" in the filter box.
+
+5. Check the checkbox next to the plugin and click on the "Install without restart" button.
+
+6. Once the installation is complete, go back to the Jenkins home page.
+
+7. Click on "New Item" in the left-hand sidebar to create a new Jenkins job.
+
+8. Enter a name for your job and select the type of job you want to create (e.g., Freestyle project or Pipeline).
+
+9. Configure the job as per your requirements (e.g., source code management, build triggers, etc.).
+
+10. Scroll down to the "Build" section and click on the "Add build step" dropdown.
+
+11. Select "Invoke OWASP Dependency-Check" from the dropdown.
+
+12. Configure the plugin settings according to your needs. This includes specifying the path to your project, any additional arguments, and choosing the appropriate OWASP Dependency-Check installation.
+
+13. Save the job configuration.
+
+Now, whenever you run the Jenkins job, OWASP Dependency Check will be invoked to analyze your project's dependencies for vulnerabilities.
+
+Note: Before running the job, make sure you have already set up the desired OWASP Dependency-Check installation in Jenkins. You can do this by going to "Manage Jenkins" > "Global Tool Configuration" and adding a new installation for OWASP Dependency Check.
 
 ### Option 1: Downloading the Standalone JAR
 
