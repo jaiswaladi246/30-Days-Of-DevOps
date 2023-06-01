@@ -206,4 +206,6 @@ pipeline {
     }
 }
 ```
+### Once the pipeline is success you will get the results in sonarqube as below.
 
+![alt text](https://github.com/jaiswaladi246/30-Days-Of-DevOps/blob/main/Images/3.png?raw=true)
