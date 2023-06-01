@@ -84,49 +84,58 @@ A software development team is working on a complex web application project with
 
 By incorporating SonarQube into their development workflow, the team can proactively identify and address code issues, improve code maintainability, enhance security, and adhere to coding standards. SonarQube helps the team foster a culture of quality and continuous improvement, leading to the delivery of robust and reliable software.
 
+
+### Jenkins pipeline to run SOnar analysis
+
+```powershell
 pipeline {
     agent any
+    
+    tools {
+        jdk 'jdk11'
+        maven 'maven3'
+    }
+    
+    environment {
+        SCANNER_HOME = tool 'sonar-scanner'
+    }
     
     stages {
         stage('Checkout') {
             steps {
-                // Checkout your Java project from version control
-                // For example:
-                // git 'https://github.com/your-repo/java-project.git'
+                # Checkout your Java project from version control
+                # For example:
+                # git 'https://github.com/your-repo/java-project.git'
             }
         }
         
         stage('Build') {
             steps {
-                // Build your Java project
-                // For example:
-                // sh 'mvn clean install'
+                # Build your Java project
+                # For example:
+                # sh 'mvn clean install'
             }
         }
         
         stage('SonarQube Analysis') {
             steps {
-                withSonarQubeEnv('SonarQube') {
-                    // Run SonarQube analysis
-                    // Make sure you have SonarQube configured in Jenkins and provide the correct SonarQube server credentials
-                    
-                    // For example, using the SonarScanner:
-                    // sh 'sonar-scanner'
-                    
-                    // Or using the SonarQube Scanner for Maven:
-                    // sh 'mvn sonar:sonar'
-                }
+                # Run SonarQube analysis
+                # Make sure you have SonarQube configured in Jenkins and provide the correct SonarQube server credentials
+                
+                
+                
+                # Or using the SonarQube Scanner for Maven:
+                # sh 'mvn sonar:sonar'
             }
         }
         
-        stage('Build and Deploy') {
+        stage('Deploy to Tomcat') {
             steps {
-                // Additional steps to build and deploy your Java project
-                // For example:
-                // sh 'mvn package'
-                // sh 'docker build -t your-image .'
-                // sh 'docker run -d -p 8080:8080 your-image'
+                # Additional steps to deploy your Java project
+                Invoke-Expression "sudo cp target/*war apache-tomcat-path/webapps"
             }
         }
     }
 }
+```
+
