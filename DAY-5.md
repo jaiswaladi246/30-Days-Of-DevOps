@@ -85,6 +85,74 @@ A software development team is working on a complex web application project with
 By incorporating SonarQube into their development workflow, the team can proactively identify and address code issues, improve code maintainability, enhance security, and adhere to coding standards. SonarQube helps the team foster a culture of quality and continuous improvement, leading to the delivery of robust and reliable software.
 
 
+### To make sure code coverage works fine add below things in your pom file at respective places or use my Repo
+
+Here's the POM format with the added items for enabling code coverage with JaCoCo:
+
+```xml
+
+
+    <properties>
+        <!-- JaCoCo Properties -->
+        <jacoco.version>0.8.6</jacoco.version>
+        <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
+        <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
+        <sonar.jacoco.reportPath>${project.basedir}/../target/jacoco.exec</sonar.jacoco.reportPath>
+        <sonar.language>java</sonar.language>
+    </properties>
+
+    
+
+    <dependencies>
+        <!-- Other dependencies -->
+
+        <dependency>
+            <groupId>org.jacoco</groupId>
+            <artifactId>jacoco-maven-plugin</artifactId>
+            <version>0.8.6</version>
+        </dependency>
+
+        <!-- Other dependencies -->
+    </dependencies>
+
+    <!-- Other plugin configurations -->
+
+    <build>
+        <plugins>
+            <!-- Other plugins -->
+
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>${jacoco.version}</version>
+                <executions>
+                    <execution>
+                        <id>jacoco-initialize</id>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>jacoco-site</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!-- Other plugins -->
+        </plugins>
+    </build>
+
+    <!-- Other project configuration -->
+</project>
+```
+
+Make sure to include this code snippet within the `<project>` tags of your existing POM file, and adjust any other project-specific configurations as needed.
+
+
 ### Jenkins pipeline to run SOnar analysis
 
 ```powershell
