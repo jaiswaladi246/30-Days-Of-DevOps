@@ -90,7 +90,8 @@ By incorporating SonarQube into their development workflow, the team can proacti
 Here's the POM format with the added items for enabling code coverage with JaCoCo:
 
 ```xml
-
+<project>
+    <!-- Other project configuration -->
 
     <properties>
         <!-- JaCoCo Properties -->
@@ -101,7 +102,7 @@ Here's the POM format with the added items for enabling code coverage with JaCoC
         <sonar.language>java</sonar.language>
     </properties>
 
-    
+    <!-- Other dependencies -->
 
     <dependencies>
         <!-- Other dependencies -->
@@ -151,7 +152,6 @@ Here's the POM format with the added items for enabling code coverage with JaCoC
 ```
 
 Make sure to include this code snippet within the `<project>` tags of your existing POM file, and adjust any other project-specific configurations as needed.
-
 
 ### Jenkins pipeline to run SOnar analysis
 
