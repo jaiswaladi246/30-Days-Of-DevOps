@@ -37,3 +37,10 @@ To install Nexus on Linux, follow these steps:
    - The first time you access Nexus, you will be prompted to set up the administrator credentials. Follow the on-screen instructions to create an admin user.
 
 That's it! Nexus is now installed and running on your Linux system. You can proceed to configure Nexus, create repositories, and manage artifacts using the Nexus Web UI.
+
+## Install Nexus using Docker
+
+```
+docker run -d --name nexus -p 8081:8081 sonatype/nexus3
+
+```
