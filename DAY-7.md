@@ -42,5 +42,4 @@ That's it! Nexus is now installed and running on your Linux system. You can proc
 
 ```
 docker run -d --name nexus -p 8081:8081 sonatype/nexus3
-
 ```
