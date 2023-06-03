@@ -1,6 +1,7 @@
 # 30-DAYS-OF-DEVOPS
 
-## https://www.youtube.com/@devopsshack
+### Click Below link for youtube video
+[![Watch the video](https://img.youtube.com/vi/9q1DnI8MoIE/maxresdefault.jpg)](https://www.youtube.com/watch?v=9q1DnI8MoIE)
 
 ## Day 1-5: Introduction to DevOps 🔄
 
