@@ -2,6 +2,9 @@
 
 Maven is a powerful build automation and dependency management tool used primarily for Java projects, although it can be used for projects in other programming languages as well. It provides a comprehensive set of features to help manage the software development lifecycle and simplify the build process.
 
+#### Click Below to watch the video Tutorial
+[![Watch the video](https://img.youtube.com/vi/-KqyFvEJYz0/maxresdefault.jpg)](https://www.youtube.com/watch?v=-KqyFvEJYz0)
+
 ### Real World Scenario
 
 Let's consider the following scenario:
