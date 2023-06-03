@@ -39,7 +39,6 @@ Benefits of Using Docker in this Scenario:
 - Portability: Docker containers can be run on different platforms and cloud providers, facilitating seamless deployment and migration.
 
 This is just one example of how Docker can be used in a real-world scenario. Docker's flexibility and efficiency make it a popular choice for many development and deployment workflows, regardless of the specific application or infrastructure requirements.
-```
 
 
 # Docker Commands to build, tag, push and run a docker image
