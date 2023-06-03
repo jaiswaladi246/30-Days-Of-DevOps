@@ -5,7 +5,7 @@
 OWASP Dependency Check is a software composition analysis (SCA) tool that identifies project dependencies with known vulnerabilities. It helps developers and security professionals identify and mitigate potential risks associated with using vulnerable libraries and components.
 
 #### Click Below to watch the video Tutorial
-[![Watch the video](https://img.youtube.com/vi/1K_OPDOIb5U/maxresdefault.jpg)](https://www.youtube.com/watch?v=1K_OPDOIb5U)
+[![Watch the video](https://img.youtube.com/vi/1K_OPDOIb5U/hqdefault.jpg =200x)](https://www.youtube.com/watch?v=1K_OPDOIb5U)
 
 ## Installation
 
