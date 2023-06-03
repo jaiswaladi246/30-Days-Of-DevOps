@@ -176,5 +176,5 @@ pipeline {
 }
 ```
 
-
+![alt text](https://github.com/jaiswaladi246/30-Days-Of-DevOps/blob/main/Images/5.png?raw=true)
 
