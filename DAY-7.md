@@ -1,4 +1,8 @@
-To install Nexus on Linux, follow these steps:
+## DAY-7 | NEXUS
+
+Nexus Repository Manager: Nexus Repository Manager is a popular artifact repository management tool often used in DevOps environments. It serves as a central hub for storing and managing software artifacts such as binary files, libraries, and dependencies. The Nexus Repository Manager provides version control, access control, and distribution capabilities, making it easier for development and operations teams to collaborate on building and deploying software. By having a centralized repository, teams can ensure consistency, traceability, and efficient sharing of artifacts across the software development lifecycle.
+
+### To install Nexus on Linux, follow these steps:
 
 1. Prerequisites:
    - Ensure that Java Development Kit (JDK) is installed on your Linux system. Nexus requires Java to run. You can check if Java is installed by running the command `java -version` in the terminal. If Java is not installed, you can install it using the package manager of your Linux distribution.
