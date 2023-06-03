@@ -4,6 +4,9 @@ Apache Tomcat, often referred to simply as Tomcat, is an open-source web server 
 
 Tomcat is designed to be lightweight and easy to use, making it a popular choice for developers and organizations looking to deploy Java web applications. Tomcat is widely used in both development and production environments and is compatible with various operating systems, including Windows, Linux, and macOS.
 
+#### Click Below to watch the video Tutorial
+[![Watch the video](https://img.youtube.com/vi/A7of3oK7deM/maxresdefault.jpg)](https://www.youtube.com/watch?v=A7of3oK7deM)
+
 ## Real World Scenario
 
 One real-world scenario where Apache Tomcat is commonly used is in the deployment of enterprise web applications. Let's consider an example of an e-commerce website.
