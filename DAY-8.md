@@ -41,8 +41,7 @@ Benefits of Using Docker in this Scenario:
 This is just one example of how Docker can be used in a real-world scenario. Docker's flexibility and efficiency make it a popular choice for many development and deployment workflows, regardless of the specific application or infrastructure requirements.
 ```
 
-You can copy and paste this markdown content into your README.md file on GitHub.
-```markdown
+
 # Docker Commands to build, tag, push and run a docker image
 
 To build, tag, push, and run a Docker image, you can use the following Docker commands:
@@ -90,4 +89,4 @@ docker run -p <host_port>:<container_port> <image_name>
 These commands assume that you have Docker installed and configured on your system. They are meant to provide a general overview, and there are many more advanced options and configurations available for Docker. I recommend consulting the [official Docker documentation](https://docs.docker.com/) for more details and examples specific to your use case.
 ```
 
-You can copy and paste this markdown content into your README.md file on GitHub.
+
