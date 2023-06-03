@@ -106,8 +106,6 @@ Remember to replace the Nexus server URL (`http://13.126.124.159:8081/repository
 
 To authenticate with Nexus using a `settings.xml` file, you can include the following configuration in the file:
 
-
-```
 ```xml
 <settings>
   <servers>
@@ -124,10 +122,8 @@ To authenticate with Nexus using a `settings.xml` file, you can include the foll
   </servers>
 </settings>
 ```
-```
 
 In the above configuration, replace `your-username` with your Nexus username and `your-password` with your Nexus password. 
 
 Make sure to include this `settings.xml` file in the appropriate location on your system.
-
 
