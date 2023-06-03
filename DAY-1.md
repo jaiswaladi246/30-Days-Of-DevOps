@@ -4,6 +4,10 @@ DevOps, short for Development and Operations, is a set of practices that emphasi
 
 Continuous Integration and Continuous Deployment/Delivery (CI/CD) are essential practices within the DevOps methodology. They focus on automating and accelerating the processes of building, testing, and deploying software.
 
+#### Click Below to watch the video Tutorial
+[![Watch the video](https://img.youtube.com/vi/Tq1vBqliJ_M/maxresdefault.jpg)](https://www.youtube.com/watch?v=Tq1vBqliJ_M)
+
+
 ## Continuous Integration (CI)
 
 CI is a software development practice that involves frequently integrating code changes from multiple developers into a shared repository. The goal is to detect integration issues early and ensure that the software always remains in a working state. The CI process typically involves the following steps:
