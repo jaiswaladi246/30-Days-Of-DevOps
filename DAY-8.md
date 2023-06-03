@@ -178,3 +178,5 @@ pipeline {
 
 ![alt text](https://github.com/jaiswaladi246/30-Days-Of-DevOps/blob/main/Images/6.png?raw=true)
 
+## Deployed Application
+![alt text](https://github.com/jaiswaladi246/30-Days-Of-DevOps/blob/main/Images/7.png?raw=true)
