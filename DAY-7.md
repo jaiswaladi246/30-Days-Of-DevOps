@@ -1,5 +1,7 @@
 ## DAY-7 | NEXUS
 
+![alt text](https://github.com/jaiswaladi246/30-Days-Of-DevOps/blob/main/Images/5.png?raw=true)
+
 Nexus Repository Manager: Nexus Repository Manager is a popular artifact repository management tool often used in DevOps environments. It serves as a central hub for storing and managing software artifacts such as binary files, libraries, and dependencies. The Nexus Repository Manager provides version control, access control, and distribution capabilities, making it easier for development and operations teams to collaborate on building and deploying software. By having a centralized repository, teams can ensure consistency, traceability, and efficient sharing of artifacts across the software development lifecycle.
 
 ## Real-world Scenario: Using Nexus Artifact Repository in a DevOps Environment
@@ -126,4 +128,24 @@ To authenticate with Nexus using a `settings.xml` file, you can include the foll
 In the above configuration, replace `your-username` with your Nexus username and `your-password` with your Nexus password. 
 
 Make sure to include this `settings.xml` file in the appropriate location on your system.
+
+### After this just need to run commands for deploy as below
+
+#### In case of maven on linux
+```
+mvn clean deploy
+```
+
+#### In case of Jenkins Pipeline
+```
+configFileProvider([configFile(fileId: '1c322f97-3d77-4302-abe0-7dd0d866eab0', variable: 'mavensettings')]) {
+                  
+                  sh "mvn -s $mavensettings clean deploy -DskipTests=true"
+                  
+                }
+```
+
+### Once the pipeline is success you will get the results in Nexus as below.
+
+![alt text](https://github.com/jaiswaladi246/30-Days-Of-DevOps/blob/main/Images/4.png?raw=true)
 
