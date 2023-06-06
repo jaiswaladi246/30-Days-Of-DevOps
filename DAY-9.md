@@ -124,6 +124,3 @@ spec:
 ```
 
 
-You can now copy and paste the above content into your Markdown file on GitHub. The YAML code block is enclosed in triple backticks (```) with `yaml` specified after the opening triple backticks to specify the language for syntax highlighting.
-
-Note: The Markdown formatting might not be rendered correctly in this text-based interface, but it should appear correctly in the actual Markdown file on GitHub.
