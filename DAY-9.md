@@ -43,6 +43,8 @@ Volumes provide persistent storage for pods. They allow data to persist beyond t
 Kubernetes follows a master-worker architecture. The master components include the API server, controller manager, and scheduler, which collectively manage and control the cluster. The worker nodes, also known as minions, host the application workloads in the form of pods.
 ![alt text](https://github.com/jaiswaladi246/30-Days-Of-DevOps/blob/main/Images/8.png?raw=true)
 
+### MASTER NODE
+
 1. **API Server**: The API server is the central component of the Kubernetes control plane. It acts as the primary interface for users, administrators, and other components to interact with the cluster. It exposes the Kubernetes API, which allows users to create, update, and delete Kubernetes objects such as pods, services, deployments, and more. The API server handles authentication, authorization, and validation of API requests, ensuring the cluster's security and consistency.
 
 2. **Scheduler**: The scheduler is responsible for placing pods onto nodes in the cluster. It evaluates various factors such as resource requirements, node availability, and constraints defined in the pod specification. The scheduler makes intelligent decisions to optimize resource utilization and ensure that pods are scheduled on suitable nodes. It continuously monitors the cluster state and adjusts the pod assignments as needed.
