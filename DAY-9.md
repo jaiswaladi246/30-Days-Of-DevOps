@@ -76,3 +76,54 @@ In summary, the container runtime manages containers on each node, the kubelet i
 - **Rolling Updates and Rollbacks:** Deployments enable seamless rolling updates of application versions and facilitate easy rollbacks in case of issues.
 - **Service Discovery and Load Balancing:** Kubernetes services allow applications to discover and communicate with each other, distributing traffic evenly across pods
 
+
+**YAML Files for Kubernetes:**
+
+YAML (YAML Ain't Markup Language) is a human-readable data serialization format commonly used for defining configurations in Kubernetes. YAML files are used to describe the desired state of Kubernetes objects, such as pods, services, deployments, and more. They follow a hierarchical structure with key-value pairs and indentation to define the properties and values of each object.
+
+Here's an example of a YAML file defining a simple Kubernetes pod:
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-pod
+spec:
+  containers:
+  - name: my-container
+    image: nginx:latest
+    ports:
+    - containerPort: 80
+```
+
+In this example:
+- `apiVersion` specifies the Kubernetes API version being used.
+- `kind` defines the type of Kubernetes object being created (in this case, a pod).
+- `metadata` contains information about the pod, such as its name.
+- `spec` specifies the desired state of the pod.
+- `containers` defines the list of containers running within the pod.
+- `name` specifies the name of the container.
+- `image` specifies the container image to be used.
+- `ports` defines the list of ports to be exposed by the container.
+
+
+
+```markdown
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-pod
+spec:
+  containers:
+  - name: my-container
+    image: nginx:latest
+    ports:
+    - containerPort: 80
+```
+```
+```
+
+You can now copy and paste the above content into your Markdown file on GitHub. The YAML code block is enclosed in triple backticks (```) with `yaml` specified after the opening triple backticks to specify the language for syntax highlighting.
+
+Note: The Markdown formatting might not be rendered correctly in this text-based interface, but it should appear correctly in the actual Markdown file on GitHub.
