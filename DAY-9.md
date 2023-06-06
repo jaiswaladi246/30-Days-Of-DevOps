@@ -55,6 +55,18 @@ Kubernetes follows a master-worker architecture. The master components include t
 
 In summary, the API server acts as the entry point for interacting with the cluster, the scheduler places pods onto nodes, the controller manager manages various controllers to maintain the desired state, and etcd serves as the distributed datastore for the cluster's configuration and state information. Together, these components form the core control plane of a Kubernetes cluster, enabling the management and orchestration of containerized applications at scale.
 
+### AGENT NODE
+
+Here's an explanation of container runtime, kubelet, and kube-proxy in Kubernetes:
+
+1. **Container Runtime**: The container runtime is responsible for running and managing containers on each node in the Kubernetes cluster. It interacts directly with the underlying operating system's kernel to start, stop, and monitor containers. Kubernetes supports multiple container runtimes, such as Docker, containerd, and CRI-O. The container runtime ensures that containers are isolated from each other, have the required resources, and can communicate with other containers and the outside world.
+
+2. **Kubelet**: The kubelet is an agent that runs on each node in the Kubernetes cluster. It is responsible for managing and maintaining the state of the node and its associated containers. The kubelet communicates with the control plane components, such as the API server and the scheduler, to receive instructions and report the node's status. It ensures that the containers specified in the pod manifests are running and healthy by starting, stopping, and monitoring them. The kubelet also handles tasks like attaching and mounting volumes, performing health checks, and logging container status.
+
+3. **kube-proxy**: kube-proxy is a network proxy that runs on each node in the Kubernetes cluster. It enables network communication between services or pods inside the cluster. kube-proxy maintains network rules (iptables or IPVS rules) to route traffic to the appropriate destination based on the service or pod IP address and port. It handles load balancing across multiple pod replicas of a service, provides service discovery, and handles network address translation (NAT) for pods accessing services from outside the cluster. kube-proxy ensures that the network connections within the cluster are properly managed and routed.
+
+In summary, the container runtime manages containers on each node, the kubelet is responsible for managing the node and its containers, and kube-proxy facilitates network communication and load balancing among pods and services within the cluster. These components work together to ensure that containers are running, properly networked, and can communicate with each other in a Kubernetes cluster.
+
 
 ## Benefits of Kubernetes
 
