@@ -109,7 +109,7 @@ In this example:
 
 
 ```markdown
-```yaml
+
 apiVersion: v1
 kind: Pod
 metadata:
@@ -120,7 +120,6 @@ spec:
     image: nginx:latest
     ports:
     - containerPort: 80
-```
 ```
 
 
