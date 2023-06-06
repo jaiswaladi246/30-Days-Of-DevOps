@@ -108,7 +108,7 @@ In this example:
 
 
 
-```markdown
+```yaml
 
 apiVersion: v1
 kind: Pod
