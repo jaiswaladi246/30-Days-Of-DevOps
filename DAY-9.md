@@ -139,7 +139,7 @@ spec:
   - protocol: TCP
     port: 80
     targetPort: 80
-  type: ClusterIP
+  type: NodePort
 ```
 
 In this example:
@@ -152,52 +152,7 @@ In this example:
 - `protocol` specifies the protocol to be used (in this case, TCP).
 - `port` specifies the port number for accessing the Service.
 - `targetPort` specifies the port number on the pods to which traffic should be forwarded.
-- `type` defines the type of Service. `ClusterIP` creates an internal-only virtual IP for accessing the Service within the cluster.
+- `type` defines the type of Service. `NodePort` exposes a service externally to the cluster by means of the target nodes IP address and the NodePort.
 
 
-
-```markdown
-**Deployment YAML:**
-
-```yaml
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: my-deployment
-spec:
-  replicas: 3
-  selector:
-    matchLabels:
-      app: my-app
-  template:
-    metadata:
-      labels:
-        app: my-app
-    spec:
-      containers:
-      - name: my-container
-        image: nginx:latest
-        ports:
-        - containerPort: 80
-```
-
-**Service YAML:**
-
-```yaml
-apiVersion: v1
-kind: Service
-metadata:
-  name: my-service
-spec:
-  selector
-
-:
-    app: my-app
-  ports:
-  - protocol: TCP
-    port: 80
-    targetPort: 80
-  type: ClusterIP
-```
-```
 
