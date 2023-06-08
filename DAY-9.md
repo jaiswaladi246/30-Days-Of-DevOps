@@ -162,7 +162,7 @@ In this example:
 
 ### On Master and slave
 
-```bash
+
 apt-get update -y
 apt-get install docker.io -y
 service docker restart
