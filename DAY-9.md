@@ -155,8 +155,9 @@ In this example:
 - `type` defines the type of Service. `NodePort` exposes a service externally to the cluster by means of the target nodes IP address and the NodePort.
 
 
+## --- KUBERNETES Install Steps ---
 ```markdown
---- KUBERNETES ---
+
 
 ## Step1:
 
