@@ -1,4 +1,4 @@
-# DAY-9 | KUBERNETES PART-1
+# DAY-9 | KUBERNETES PART-1 & PART-2
 
 ## Introduction to Kubernetes
 
@@ -200,7 +200,8 @@ kubectl apply -f https://raw.githubusercontent.com/projectcalico/calico/v3.25.1/
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v0.49.0/deploy/static/provider/baremetal/deploy.yaml
 ```
 
-Kubectl is a command-line tool used to interact with Kubernetes clusters. It allows you to deploy and manage applications, inspect and modify cluster resources, and perform various administrative tasks. Here are some basic kubectl commands:
+
+### Kubectl is a command-line tool used to interact with Kubernetes clusters. It allows you to deploy and manage applications, inspect and modify cluster resources, and perform various administrative tasks. Here are some basic kubectl commands:
 
 1. **kubectl get**: Retrieve information about resources in the cluster.
    - `kubectl get pods`: List all pods in the cluster.
