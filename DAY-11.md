@@ -22,6 +22,10 @@ From there, you can start using Azure DevOps and explore its various features an
 
 Remember that you will have access to certain free services and limitations within your Azure DevOps organization, and depending on your needs, you can choose to upgrade to paid plans for additional features and capacity.
 
+#### Azure DevOps Organisation
+
+![alt text](https://github.com/jaiswaladi246/30-Days-Of-DevOps/blob/main/Images/9.png?raw=true)
+
 The official documentation for Azure DevOps can be found on the [Microsoft Docs website](https://docs.microsoft.com/en-us/azure/devops/). Here, you will find a wealth of resources, including tutorials, guides, and reference documentation covering various aspects of Azure DevOps. The documentation is organized into different sections, allowing you to explore topics such as:
 
 1. **Azure Boards**: This section covers features related to project planning, tracking, and collaboration, such as creating work items, managing backlogs, and configuring boards.
