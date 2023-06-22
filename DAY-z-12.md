@@ -39,6 +39,8 @@ To create an Azure Pipeline using the Classic Editor, follow these steps:
 
 10. Once you have defined your pipeline stages and tasks, click on the **Save & queue** button to save your pipeline configuration.
 
+![alt text](https://github.com/jaiswaladi246/30-Days-Of-DevOps/blob/main/Images/10.png?raw=true)
+
 ### Running the Pipeline
 
 To run your Azure Pipeline, follow these steps:
