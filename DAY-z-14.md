@@ -2,6 +2,9 @@
 
 # Azure Kubernetes Service (AKS) Documentation
 
+#### Click Below to watch the video Tutorial
+[![Watch the video](https://img.youtube.com/vi/-gMbmpK1HseY/maxresdefault.jpg)](https://www.youtube.com/watch?v=gMbmpK1HseY)
+
 ## Overview
 
 Azure Kubernetes Service (AKS) is a managed container orchestration service provided by Microsoft Azure. It simplifies the deployment, management, and scaling of containerized applications using Kubernetes. AKS eliminates the need for manual setup and configuration of Kubernetes clusters, allowing you to focus on application development and deployment.
