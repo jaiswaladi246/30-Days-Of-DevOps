@@ -3,7 +3,7 @@
 # Azure Kubernetes Service (AKS) Documentation
 
 #### Click Below to watch the video Tutorial
-[![Watch the video](https://img.youtube.com/vi/-gMbmpK1HseY/maxresdefault.jpg)](https://www.youtube.com/watch?v=gMbmpK1HseY)
+[![Watch the video](https://img.youtube.com/vi/gMbmpK1HseY/0.jpg)](https://www.youtube.com/watch?v=gMbmpK1HseY)
 
 ## Overview
 
