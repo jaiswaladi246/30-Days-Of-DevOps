@@ -5,9 +5,81 @@ Azure Artifacts is a package management solution provided by Microsoft Azure. It
 #### Click Below to watch the video Tutorial
 [![Watch the video](https://img.youtube.com/vi/tiP-Z1jPax0/0.jpg)](https://www.youtube.com/watch?v=tiP-Z1jPax0)
 
-### Getting Started
+### Getting Started For Maven & Nugget Packages
 
 To start using Azure Artifacts and gain hands-on experience, follow these steps:
+
+## Azure Artifacts with Maven Packages
+
+1. **Create an Azure Artifacts feed**
+
+Start by creating an Azure Artifacts feed in your Azure DevOps organization or Azure DevOps project. This feed will serve as a repository for your Maven packages.
+
+2. **Generate Maven package credentials**
+
+To authenticate with your Azure Artifacts feed, you need to generate a Personal Access Token (PAT) in Azure DevOps. Follow these steps to generate the token:
+
+   - Go to your Azure DevOps organization or project.
+   - Click on your profile picture in the top-right corner and select "Personal access tokens".
+   - Click on "New Token" and provide a name for the token.
+   - Under "Scopes", select the appropriate permissions for your Maven packages (e.g., "Packaging (read, write, manage)").
+   - Click on "Create" and make sure to copy the generated token value. You will need this later.
+
+3. **Configure Maven settings.xml**
+
+In your Maven project, you need to configure the `settings.xml` file with the necessary Azure Artifacts feed information and credentials. Here's an example of how to configure it:
+
+   - Open the `settings.xml` file located in your Maven installation's `conf` directory or in your user's `.m2` directory.
+   - Add a `<servers>` section if it doesn't exist already:
+   
+     ```xml
+     <servers>
+       <server>
+         <id>azure-artifacts</id>
+         <username>USERNAME</username>
+         <password>PAT</password>
+       </server>
+     </servers>
+     ```
+     
+     Replace `USERNAME` with any value (it doesn't matter), and replace `PAT` with the Personal Access Token you generated in the previous step.
+
+   - Add a `<repositories>` section if it doesn't exist already:
+
+     ```xml
+     <repositories>
+       <repository>
+         <id>azure-artifacts</id>
+         <url>https://pkgs.dev.azure.com/ORGANIZATION/_packaging/FEEDNAME/maven/v1</url>
+       </repository>
+     </repositories>
+     ```
+     
+     Replace `ORGANIZATION` with your Azure DevOps organization name, and `FEEDNAME` with the name of your Azure Artifacts feed.
+
+4. **Publish and consume Maven packages**
+
+With the configuration in place, you can now publish and consume Maven packages from your Azure Artifacts feed.
+
+   - To publish a package, build your Maven project and execute the `mvn deploy` command. This will upload your package to the Azure Artifacts feed.
+   
+   - To consume a package, simply include the appropriate dependency in your `pom.xml` file. For example:
+
+     ```xml
+     <dependencies>
+       <dependency>
+         <groupId>com.example</groupId>
+         <artifactId>my-package</artifactId>
+         <version>1.0.0</version>
+       </dependency>
+     </dependencies>
+     ```
+
+     Replace `com.example`, `my-package`, and `1.0.0` with the actual coordinates of the package you want to consume.
+
+That's it! You have now configured Azure Artifacts to work with Maven packages. Make sure to replace the placeholder values with your actual Azure DevOps organization, feed name, and credentials.
+
+## Azure Artifacts with NPM Packages
 
 #### Step 1: Create an Azure Artifacts feed
 
