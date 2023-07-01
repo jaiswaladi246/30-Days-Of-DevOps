@@ -16,7 +16,7 @@ This tutorial will guide you through the basics of using Ansible for automation 
 - [Roles](#roles)
 - [Tags](#tags)
 - [Running Playbooks](#running-playbooks)
-- [Conclusion](#conclusion)
+
 
 ## Introduction
 
@@ -240,10 +240,167 @@ $ ansible-playbook webserver.yml
 
 Replace `webserver.yml` with the name of your playbook.
 
-## Conclusion
+# Ansible Playbook
 
-Congratulations! You've completed this Ansible tutorial. You should now have a good understanding of Ansible's key concepts and how to use it for automation and configuration management.
+This Ansible playbook contains tasks for various operations, such as installing packages, creating directories, and executing commands.
 
-For more information, refer to the official Ansible documentation: [Ansible Documentation](https://docs.ansible.com/ansible/latest/index.html)
+## Prerequisites
 
-Happy automating!
+Before running this playbook, make sure you have the following:
+
+- Ansible installed on your system
+- SSH access to the target hosts
+
+## Usage
+
+To execute this playbook, run the following command:
+
+```shell
+$ ansible-playbook playbook.yml
+```
+
+Replace `playbook.yml` with the name of your playbook file.
+
+## Playbook Tasks
+
+### Print message
+
+```yaml
+- name: Print message
+  debug:
+    msg: Hello Ansible World
+```
+
+This task prints the message "Hello Ansible World" to the console.
+
+### Print facts
+
+```yaml
+- name: Print facts
+  debug:
+    msg: "IPv4 address: {{ ansible_default_ipv4.address }}"
+```
+
+This task prints the IPv4 address of the host.
+
+### Install Apache
+
+```yaml
+- name: Ansible apt install Apache
+  apt:
+    name: apache2
+    state: present
+```
+
+This task installs the Apache web server using the `apt` module.
+
+### Create directory
+
+```yaml
+- name: Create directory
+  file:
+    path: /home/ubuntu/xyz
+    state: directory
+```
+
+This task creates a directory at `/home/ubuntu/xyz` using the `file` module.
+
+### Install Maven
+
+```yaml
+- name: Ansible apt install Maven
+  apt:
+    name: maven
+    state: present
+```
+
+This task installs Maven using the `apt` module.
+
+### Install JDK
+
+```yaml
+- name: Ansible apt install JDK
+  apt:
+    name: openjdk-11-jre
+    state: present
+```
+
+This task installs the OpenJDK 11 runtime environment using the `apt` module.
+
+### Change directory
+
+```yaml
+- name: Change directory
+  apt:
+    name: openjdk-11-jre
+    state: present
+```
+
+This task changes the directory. Please note that the task name and module don't seem to match in this case.
+
+### Git clone
+
+```yaml
+- name: Git clone
+  shell: |
+    git clone url
+```
+
+This task clones a Git repository using the `shell` module. Replace `url` with the actual repository URL.
+
+## SAMPLE PLAYBOOK TO DEPLOY AN APPLICATION TO TOMCAT
+
+```yaml
+---
+- name: Build and Deploy Application to Tomcat Server
+  hosts: tomcat-server
+  become: true
+
+  tasks:
+    - name: Check if Tomcat is running
+      systemd:
+        name: tomcat
+        state: started
+      register: tomcat_status
+      ignore_errors: true
+
+    - name: Stop Tomcat if running
+      systemd:
+        name: tomcat
+        state: stopped
+      when: tomcat_status.changed
+
+    - name: Clean Tomcat webapps directory
+      file:
+        path: /opt/tomcat/webapps
+        state: absent
+
+    - name: Copy WAR file to Tomcat webapps directory
+      copy:
+        src: /path/to/application.war
+        dest: /opt/tomcat/webapps/
+        mode: 0644
+
+    - name: Start Tomcat
+      systemd:
+        name: tomcat
+        state: started
+```
+
+In this playbook:
+
+1. The playbook starts by checking if the Tomcat service is already running on the target server.
+2. If Tomcat is running, it stops the service to ensure a clean deployment.
+3. The playbook then removes any existing applications in the Tomcat `webapps` directory.
+4. The application's WAR file is copied from the local machine to the Tomcat `webapps` directory on the target server.
+5. Finally, the playbook starts the Tomcat service again.
+
+Make sure to replace `tomcat-server` with the actual hostname or IP address of your Tomcat server. Also, update `/path/to/application.war` with the path to your application's WAR file on your local machine.
+
+You can execute this playbook using the `ansible-playbook` command:
+
+```shell
+$ ansible-playbook deploy.yml
+```
+
+Replace `deploy.yml` with the name of your playbook file.
