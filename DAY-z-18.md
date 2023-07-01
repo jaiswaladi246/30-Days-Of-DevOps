@@ -12,7 +12,6 @@ This tutorial will guide you through the basics of using Ansible for automation 
 - [Playbooks](#playbooks)
 - [Variables](#variables)
 - [Modules](#modules)
-- [Templates](#templates)
 - [Handlers](#handlers)
 - [Roles](#roles)
 - [Tags](#tags)
@@ -160,36 +159,6 @@ Example playbook using modules:
 ```
 
 This playbook creates a user named "john" and copies the SSH public key to their authorized keys file.
-
-## Templates
-
-Ansible allows you to use Jinja2 templates to generate configuration files dynamically. Templates can contain variables, loops, conditionals, and other constructs.
-
-Example template file `nginx.conf.j2`:
-
-```nginx
-user {{ nginx_user }};
-worker_processes auto;
-pid /run/nginx.pid;
-
-events {
-  worker_connections 1024;
-}
-
-http {
-  server {
-    listen {{ nginx_port }};
-    server_name localhost;
-    root /var/www/html;
-
-    location / {
-      index index.html;
-    }
-  }
-}
-```
-
-This template generates an Nginx configuration file with the variables `nginx_user` and `nginx_port` filled in.
 
 ## Handlers
 
