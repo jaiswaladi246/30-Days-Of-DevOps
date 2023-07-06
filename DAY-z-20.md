@@ -249,3 +249,109 @@ chmod u=rw,g=r,o=r file.txt
 chmod -R u+w project/
 ```
 
+## Top 100 LINUX COMMANDS
+
+1. `ls` - List files and directories.
+2. `cd` - Change directory.
+3. `pwd` - Print the current working directory.
+4. `mkdir` - Create a new directory.
+5. `rm` - Remove files and directories.
+6. `cp` - Copy files and directories.
+7. `mv` - Move or rename files and directories.
+8. `cat` - Concatenate and display file contents.
+9. `less` - View file contents interactively.
+10. `head` - Display the first few lines of a file.
+11. `tail` - Display the last few lines of a file.
+12. `grep` - Search for patterns in files.
+13. `find` - Search for files and directories.
+14. `chmod` - Change file permissions.
+15. `chown` - Change file ownership.
+16. `chgrp` - Change group ownership.
+17. `tar` - Archive files and directories.
+18. `gzip` - Compress files.
+19. `gunzip` - Decompress files.
+20. `ssh` - Securely connect to a remote server.
+21. `scp` - Securely copy files between hosts.
+22. `rsync` - Synchronize files and directories.
+23. `wget` - Download files from the web.
+24. `curl` - Transfer data from or to a server.
+25. `ping` - Send ICMP echo requests to a host.
+26. `traceroute` - Trace the route to a network host.
+27. `ifconfig` - Configure network interfaces.
+28. `netstat` - Display network connections and statistics.
+29. `iptables` - Configure firewall rules.
+30. `route` - Display or modify the routing table.
+31. `ps` - Display running processes.
+32. `top` - Monitor system resources and processes.
+33. `kill` - Terminate processes.
+34. `nohup` - Run a command immune to hangups.
+35. `cron` - Schedule tasks to run at specific times.
+36. `at` - Schedule one-time tasks.
+37. `history` - View command history.
+38. `alias` - Create command aliases.
+39. `man` - Display manual pages.
+40. `info` - Display command information.
+41. `date` - Display or set the system date and time.
+42. `cal` - Display a calendar.
+43. `hostname` - Display or set the system hostname.
+44. `whoami` - Print the current user name.
+45. `who` - Display logged-in users.
+46. `su` - Switch user or become superuser.
+47. `sudo` - Execute commands as another user or superuser.
+48. `adduser` - Add a user to the system.
+49. `usermod` - Modify user account properties.
+50. `passwd` - Change user password.
+51. `groupadd` - Add a group to the system.
+52. `groupmod` - Modify group properties.
+53. `id` - Display user and group information.
+54. `du` - Estimate file and directory space usage.
+55. `df` - Display free disk space.
+56. `mount` - Mount filesystems.
+57. `umount` - Unmount filesystems.
+58. `free` - Display memory usage.
+59. `uptime` - Display system uptime.
+60. `ps aux` - Display detailed process information.
+61. `killall` - Terminate processes by name.
+62. `scp` - Securely copy files between hosts.
+63. `rsync` - Synchronize files and directories.
+
+
+64. `chmod` - Change file permissions.
+65. `chown` - Change file ownership.
+66. `chgrp` - Change group ownership.
+67. `tar` - Archive files and directories.
+68. `gzip` - Compress files.
+69. `gunzip` - Decompress files.
+70. `ssh-keygen` - Generate SSH key pairs.
+71. `ssh-copy-id` - Copy SSH keys to remote hosts.
+72. `service` - Control system services.
+73. `systemctl` - Manage system services (systemd-based systems).
+74. `journalctl` - Query and view system logs (systemd-based systems).
+75. `crontab` - Manage user cron jobs.
+76. `systemctl` - Manage system services (systemd-based systems).
+77. `journalctl` - Query and view system logs (systemd-based systems).
+78. `crontab` - Manage user cron jobs.
+79. `df` - Display free disk space.
+80. `fdisk` - Manipulate disk partition table.
+81. `parted` - Disk partitioning tool.
+82. `mkfs` - Create a file system on a device.
+83. `mount` - Mount filesystems.
+84. `umount` - Unmount filesystems.
+85. `wget` - Download files from the web.
+86. `curl` - Transfer data from or to a server.
+87. `netcat` - Network utility for reading and writing data across network connections.
+88. `telnet` - Telnet client for connecting to remote servers.
+89. `ftp` - File Transfer Protocol client for transferring files to and from remote servers.
+90. `nslookup` - Perform DNS queries to retrieve domain name or IP address information.
+91. `dig` - DNS lookup utility for querying DNS servers.
+92. `host` - Perform DNS lookups and display detailed information about DNS records.
+93. `route` - Display or modify the routing table.
+94. `iwconfig` - Configure wireless network interfaces.
+95. `iw` - Configure wireless devices and their properties.
+96. `tcpdump` - Capture network packets and display them in real-time or save them to a file.
+97. `nmap` - Network exploration and security auditing tool.
+98. `sed` - Stream editor for text manipulation.
+99. `awk` - Pattern scanning and text processing language.
+100. `grep` - Search for patterns in files or output.
+
+These commands cover a wide range of tasks and utilities in Linux. Feel free to explore their options and further usage by referring to their respective man pages or online documentation.
