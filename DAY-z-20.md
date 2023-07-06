@@ -1,16 +1,11 @@
 # DAY-20 | LINUX For DevOps ENgineers
 
-Linux is an open-source operating system kernel that serves as the foundation for various Linux-based operating systems (distributions). It was initially developed by Linus Torvalds in 1991 and has since become one of the most widely used operating systems in the world.
-
+Linux is an open-source operating system kernel that serves as the foundation for various Linux-based operating systems (distributions).
 Linux is known for its stability, security, and flexibility. It is based on the Unix operating system and follows the Unix philosophy of small, modular, and reusable components. Linux is highly customizable and can be tailored to suit various needs, ranging from desktop computers and servers to embedded systems and supercomputers.
-
-One of the key features of Linux is its open-source nature, which means that its source code is freely available and can be modified and distributed by anyone. This has led to a large and active community of developers and contributors who continuously work on improving and expanding Linux.
 
 Linux distributions, such as Ubuntu, Fedora, Debian, CentOS, and many others, take the Linux kernel and combine it with additional software packages, utilities, and graphical interfaces to create complete operating systems that are ready to be used by end-users.
 
 Linux offers a command-line interface (CLI) that allows users to interact with the system through text commands, as well as graphical user interfaces (GUIs) that provide a more user-friendly experience. It supports a wide range of applications, software development tools, and server services, making it suitable for various purposes, including general computing, web servers, cloud infrastructure, networking, and more.
-
-Overall, Linux provides a powerful, reliable, and versatile platform that has gained popularity across different industries and is widely used by individuals, organizations, and communities around the world.
 
 ## Linux Folder Structure
 
