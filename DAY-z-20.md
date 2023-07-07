@@ -1,4 +1,4 @@
-# DAY-20 | LINUX For DevOps ENgineers
+# DAY-20 | LINUX For DevOps Engineers
 
 Linux is an open-source operating system kernel that serves as the foundation for various Linux-based operating systems (distributions).
 Linux is known for its stability, security, and flexibility. It is based on the Unix operating system and follows the Unix philosophy of small, modular, and reusable components. Linux is highly customizable and can be tailored to suit various needs, ranging from desktop computers and servers to embedded systems and supercomputers.
