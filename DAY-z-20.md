@@ -131,26 +131,159 @@ This repository provides a list of important Linux commands that are frequently 
 
 ## Here are the top 20 networking commands in Linux:
 
-1. `ifconfig` - Displays or configures network interfaces.
-2. `ip` - Shows or manipulates routing, devices, policy routing, and tunnels.
-3. `ping` - Sends ICMP Echo Request packets to a specified network host.
-4. `traceroute` - Traces the route packets take to reach a network host.
-5. `netstat` - Displays active network connections, routing tables, and network statistics.
-6. `ss` - Provides information about sockets (network connections) on a Linux system.
-7. `nslookup` - Performs DNS queries to retrieve domain name or IP address information.
-8. `dig` - A versatile DNS lookup utility for querying DNS servers.
-9. `host` - Performs DNS lookups and displays detailed information about DNS records.
-10. `route` - Shows or manipulates the IP routing table.
-11. `arp` - Manipulates or displays the kernel's ARP cache and network interface settings.
-12. `iwconfig` - Displays or configures wireless network interfaces.
-13. `iw` - Provides information and control over wireless devices and their configuration.
-14. `ssh` - Connects to a remote server using the Secure Shell protocol.
-15. `scp` - Copies files securely between a local and remote host over SSH.
-16. `ftp` - Transfers files to and from a remote server using the FTP protocol.
-17. `wget` - Downloads files from the web using HTTP, HTTPS, or FTP protocols.
-18. `curl` - A versatile command-line tool for making HTTP, HTTPS, and FTP requests.
-19. `nmap` - Scans network hosts for open ports, services, and other information.
-20. `tcpdump` - Captures network packets and displays them in real-time or saves them to a file for analysis.
+Sure! Here are 50 commonly used networking commands in Linux along with examples:
+
+1. ifconfig: Displays or configures network interfaces.
+   Example: `ifconfig eth0`
+
+2. ip: Configures and displays network interfaces, routing tables, and more.
+   Example: `ip address show`
+
+3. ping: Sends ICMP echo requests to a specified network host.
+   Example: `ping google.com`
+
+4. traceroute: Displays the route packets take to reach a destination host.
+   Example: `traceroute google.com`
+
+5. nslookup: Queries DNS servers for DNS-related information.
+   Example: `nslookup google.com`
+
+6. dig: DNS lookup utility for querying DNS servers.
+   Example: `dig google.com`
+
+7. host: Performs DNS lookups.
+   Example: `host google.com`
+
+8. netstat: Displays network connections, routing tables, and network statistics.
+   Example: `netstat -tun`
+
+9. ss: Provides detailed socket statistics.
+   Example: `ss -tun`
+
+10. route: Configures and displays routing table information.
+    Example: `route -n`
+
+11. arp: Manipulates or displays the ARP cache.
+    Example: `arp -a`
+
+12. iptables: Manages firewall rules.
+    Example: `iptables -L`
+
+13. tcpdump: Captures network traffic.
+    Example: `tcpdump -i eth0`
+
+14. ifup: Brings a network interface up.
+    Example: `ifup eth0`
+
+15. ifdown: Brings a network interface down.
+    Example: `ifdown eth0`
+
+16. ethtool: Displays or changes Ethernet device settings.
+    Example: `ethtool eth0`
+
+17. hostname: Displays or sets the system's hostname.
+    Example: `hostname`
+
+18. ssh: Connects to a remote server using the SSH protocol.
+    Example: `ssh user@hostname`
+
+19. scp: Copies files between hosts using SSH.
+    Example: `scp file.txt user@hostname:/path/to/destination`
+
+20. rsync: Syncs files and directories between different locations.
+    Example: `rsync -avz source/ user@hostname:/path/to/destination`
+
+21. nc: Reads and writes data across network connections.
+    Example: `nc -l 8080`
+
+22. wget: Downloads files from the web.
+    Example: `wget http://example.com/file.txt`
+
+23. curl: Transfers data to or from a server.
+    Example: `curl http://example.com`
+
+24. nmap: Scans ports and discovers network services.
+    Example: `nmap -p 1-1000 hostname`
+
+25. telnet: Establishes a telnet connection to a remote host.
+    Example: `telnet hostname`
+
+26. ifstat: Displays network interface statistics.
+    Example: `ifstat`
+
+27. mtr: Combines ping and traceroute functionality.
+    Example: `mtr google.com`
+
+28. route add: Adds a new route to the routing table.
+    Example: `route add -net 192.168.0.0/24 gw 192.168.1.1`
+
+29. route delete: Deletes a route from the routing table.
+    Example: `route delete default gw 192.168.1.1`
+
+30. ifconfig up: Enables a network interface.
+    Example: `ifconfig eth0 up`
+
+31. ifconfig down: Disables a network interface.
+    Example: `ifconfig eth0 down`
+
+32. ip link: Manages network interfaces.
+    Example: `ip link show`
+
+33. ip route: Manages routing tables.
+    Example: `ip route show`
+
+34. ip neigh: Manages ARP cache.
+    Example: `ip neigh show`
+
+35. ip addr: Manages IP addresses and interfaces.
+    Example: `ip addr show`
+
+36. ip link set: Modifies network interface properties.
+    Example: `ip link set eth0 mtu 1500`
+
+37. ip route add: Adds a new route to the routing table.
+    Example: `ip route add 192.168.0.0/24 via 192.168.1.1 dev eth0`
+
+38. ip route delete: Deletes a route from the routing table.
+    Example: `ip route delete 192.168.0.0/24`
+
+39. ip addr add: Adds an IP address to an interface.
+    Example: `ip addr add 192.168.0.1/24 dev eth0`
+
+40. ip addr delete: Deletes an IP address from an interface.
+    Example: `ip addr delete 192.168.0.1/24 dev eth0`
+
+41. ip tunnel add: Creates a tunnel interface.
+    Example: `ip tunnel add mytunnel mode gre remote 203.0.113.1 local 198.51.100.1`
+
+42. ip tunnel delete: Deletes a tunnel interface.
+    Example: `ip tunnel delete mytunnel`
+
+43. ip link set promisc on: Puts a network interface into promiscuous mode.
+    Example: `ip link set eth0 promisc on`
+
+44. ip link set promisc off: Disables promiscuous mode on a network interface.
+    Example: `ip link set eth0 promisc off`
+
+45. ip link set mtu: Sets the Maximum Transmission Unit (MTU) of a network interface.
+    Example: `ip link set eth0 mtu 1500`
+
+46. iptables -A INPUT: Appends a rule to the INPUT chain of the firewall.
+    Example: `iptables -A INPUT -s 192.168.0.0/24 -j ACCEPT`
+
+47. iptables -D INPUT: Deletes a rule from the INPUT chain of the firewall.
+    Example: `iptables -D INPUT -s 192.168.0.0/24 -j ACCEPT`
+
+48. iptables -P: Sets the default policy for a chain in the firewall.
+    Example: `iptables -P INPUT DROP`
+
+49. iptables -F: Flushes all rules from a chain in the firewall.
+    Example: `iptables -F INPUT`
+
+50. iptables-save: Saves the current firewall rules to a file.
+    Example: `iptables-save > firewall.rules`
+
+These commands cover a wide range of networking tasks and can be helpful for managing and troubleshooting network connections in Linux.
 
 These commands provide essential functionality for network configuration, troubleshooting, and analysis in Linux. You can refer to the respective man pages or online documentation for each command to learn more about their options and usage.
 
@@ -251,107 +384,310 @@ chmod -R u+w project/
 
 ## Top 100 LINUX COMMANDS
 
-1. `ls` - List files and directories.
-2. `cd` - Change directory.
-3. `pwd` - Print the current working directory.
-4. `mkdir` - Create a new directory.
-5. `rm` - Remove files and directories.
-6. `cp` - Copy files and directories.
-7. `mv` - Move or rename files and directories.
-8. `cat` - Concatenate and display file contents.
-9. `less` - View file contents interactively.
-10. `head` - Display the first few lines of a file.
-11. `tail` - Display the last few lines of a file.
-12. `grep` - Search for patterns in files.
-13. `find` - Search for files and directories.
-14. `chmod` - Change file permissions.
-15. `chown` - Change file ownership.
-16. `chgrp` - Change group ownership.
-17. `tar` - Archive files and directories.
-18. `gzip` - Compress files.
-19. `gunzip` - Decompress files.
-20. `ssh` - Securely connect to a remote server.
-21. `scp` - Securely copy files between hosts.
-22. `rsync` - Synchronize files and directories.
-23. `wget` - Download files from the web.
-24. `curl` - Transfer data from or to a server.
-25. `ping` - Send ICMP echo requests to a host.
-26. `traceroute` - Trace the route to a network host.
-27. `ifconfig` - Configure network interfaces.
-28. `netstat` - Display network connections and statistics.
-29. `iptables` - Configure firewall rules.
-30. `route` - Display or modify the routing table.
-31. `ps` - Display running processes.
-32. `top` - Monitor system resources and processes.
-33. `kill` - Terminate processes.
-34. `nohup` - Run a command immune to hangups.
-35. `cron` - Schedule tasks to run at specific times.
-36. `at` - Schedule one-time tasks.
-37. `history` - View command history.
-38. `alias` - Create command aliases.
-39. `man` - Display manual pages.
-40. `info` - Display command information.
-41. `date` - Display or set the system date and time.
-42. `cal` - Display a calendar.
-43. `hostname` - Display or set the system hostname.
-44. `whoami` - Print the current user name.
-45. `who` - Display logged-in users.
-46. `su` - Switch user or become superuser.
-47. `sudo` - Execute commands as another user or superuser.
-48. `adduser` - Add a user to the system.
-49. `usermod` - Modify user account properties.
-50. `passwd` - Change user password.
-51. `groupadd` - Add a group to the system.
-52. `groupmod` - Modify group properties.
-53. `id` - Display user and group information.
-54. `du` - Estimate file and directory space usage.
-55. `df` - Display free disk space.
-56. `mount` - Mount filesystems.
-57. `umount` - Unmount filesystems.
-58. `free` - Display memory usage.
-59. `uptime` - Display system uptime.
-60. `ps aux` - Display detailed process information.
-61. `killall` - Terminate processes by name.
-62. `scp` - Securely copy files between hosts.
-63. `rsync` - Synchronize files and directories.
+Sure! Here is a list of 100 commonly used Linux commands with examples:
 
+1. ls: List files and directories in the current directory.
+   Example: `ls`
 
-64. `chmod` - Change file permissions.
-65. `chown` - Change file ownership.
-66. `chgrp` - Change group ownership.
-67. `tar` - Archive files and directories.
-68. `gzip` - Compress files.
-69. `gunzip` - Decompress files.
-70. `ssh-keygen` - Generate SSH key pairs.
-71. `ssh-copy-id` - Copy SSH keys to remote hosts.
-72. `service` - Control system services.
-73. `systemctl` - Manage system services (systemd-based systems).
-74. `journalctl` - Query and view system logs (systemd-based systems).
-75. `crontab` - Manage user cron jobs.
-76. `systemctl` - Manage system services (systemd-based systems).
-77. `journalctl` - Query and view system logs (systemd-based systems).
-78. `crontab` - Manage user cron jobs.
-79. `df` - Display free disk space.
-80. `fdisk` - Manipulate disk partition table.
-81. `parted` - Disk partitioning tool.
-82. `mkfs` - Create a file system on a device.
-83. `mount` - Mount filesystems.
-84. `umount` - Unmount filesystems.
-85. `wget` - Download files from the web.
-86. `curl` - Transfer data from or to a server.
-87. `netcat` - Network utility for reading and writing data across network connections.
-88. `telnet` - Telnet client for connecting to remote servers.
-89. `ftp` - File Transfer Protocol client for transferring files to and from remote servers.
-90. `nslookup` - Perform DNS queries to retrieve domain name or IP address information.
-91. `dig` - DNS lookup utility for querying DNS servers.
-92. `host` - Perform DNS lookups and display detailed information about DNS records.
-93. `route` - Display or modify the routing table.
-94. `iwconfig` - Configure wireless network interfaces.
-95. `iw` - Configure wireless devices and their properties.
-96. `tcpdump` - Capture network packets and display them in real-time or save them to a file.
-97. `nmap` - Network exploration and security auditing tool.
-98. `sed` - Stream editor for text manipulation.
-99. `awk` - Pattern scanning and text processing language.
-100. `grep` - Search for patterns in files or output.
+2. cd: Change directory.
+   Example: `cd /path/to/directory`
+
+3. pwd: Print the current working directory.
+   Example: `pwd`
+
+4. mkdir: Create a new directory.
+   Example: `mkdir directory_name`
+
+5. rmdir: Remove an empty directory.
+   Example: `rmdir directory_name`
+
+6. cp: Copy files and directories.
+   Example: `cp file.txt destination_folder/`
+
+7. mv: Move or rename files and directories.
+   Example: `mv file.txt new_file.txt` or `mv file.txt destination_folder/`
+
+8. rm: Remove files and directories.
+   Example: `rm file.txt` or `rm -r directory/` (recursively)
+
+9. cat: Concatenate and display file content.
+   Example: `cat file.txt`
+
+10. less: View file content page by page.
+    Example: `less file.txt`
+
+11. head: Display the first few lines of a file.
+    Example: `head file.txt`
+
+12. tail: Display the last few lines of a file.
+    Example: `tail file.txt`
+
+13. grep: Search for a pattern in files.
+    Example: `grep "pattern" file.txt`
+
+14. find: Search for files and directories.
+    Example: `find /path/to/search -name "filename"`
+
+15. chmod: Change file permissions.
+    Example: `chmod 755 file.txt` (gives read, write, execute permissions to the owner, read and execute permissions to the group and others)
+
+16. chown: Change file ownership.
+    Example: `chown user:group file.txt`
+
+17. tar: Archive files and directories.
+    Example: `tar -cvf archive.tar file.txt` (create an archive)
+
+18. gzip: Compress files.
+    Example: `gzip file.txt` (creates file.txt.gz)
+
+19. gunzip: Decompress files compressed with gzip.
+    Example: `gunzip file.txt.gz`
+
+20. wget: Download files from the web.
+    Example: `wget http://example.com/file.txt`
+
+21. curl: Transfer data from or to a server.
+    Example: `curl http://example.com`
+
+22. ssh: Connect to a remote server securely.
+    Example: `ssh user@remote_server`
+
+23. scp: Copy files between local and remote machines.
+    Example: `scp file.txt user@remote_server:/path/to/destination`
+
+24. ping: Send ICMP echo requests to a network host.
+    Example: `ping example.com`
+
+25. ifconfig: Display or configure network interfaces.
+    Example: `ifconfig`
+
+26. netstat: Network statistics.
+    Example: `netstat -an`
+
+27. ip: Show or manipulate routing, devices, policy routing, and tunnels.
+    Example: `ip addr show`
+
+28. route: Show or manipulate the IP routing table.
+    Example: `route -n`
+
+29. whois: Retrieve WHOIS information for a domain.
+    Example: `whois example.com`
+
+30. uname: Print system information.
+    Example: `uname -a`
+
+31. ps: Display running processes.
+    Example: `ps aux`
+
+32. top: Monitor system processes in real-time.
+    Example: `top`
+
+33. kill: Terminate processes by ID or name.
+    Example: `kill 1234` or `killall process_name`
+
+34. df: Report file system disk space usage.
+    Example: `df -h`
+
+35. du: Estimate file and directory space usage.
+    Example: `du -sh directory`
+
+36. mount: Mount a file system or device.
+    Example: `mount /dev/sda1 /mnt`
+
+37. umount: Unmount a mounted file system.
+    Example: `umount /mnt`
+
+38. ln: Create hard or symbolic links.
+    Example: `ln -s /path/to/file link_name`
+
+39. echo: Print a message.
+    Example: `echo "Hello, world!"`
+
+40. date: Display the current date and time.
+    Example: `date`
+
+41. history: View command history.
+    Example: `history`
+
+42. tar: Archive files and directories.
+    Example: `tar -cvf archive.tar file.txt` (create an archive)
+
+43. unzip: Extract compressed files in a ZIP format.
+    Example: `unzip file.zip`
+
+44. file: Determine file type.
+    Example: `file file.txt`
+
+45. awk: Pattern scanning and processing language.
+    Example: `awk '{print $1}' file.txt`
+
+46. sed: Stream editor for filtering and transforming text.
+    Example: `sed 's/foo/bar/' file.txt`
+
+47. wc: Count lines, words, and characters in a file.
+    Example: `wc -l file.txt`
+
+48. sort: Sort lines of text.
+    Example: `sort file.txt`
+
+49. diff: Compare files line by line.
+    Example: `diff file1.txt file2.txt`
+
+50. grep: Search for a pattern in files.
+    Example: `grep "pattern" file.txt`
+
+51. tr: Translate or delete characters.
+    Example: `tr 'a-z' 'A-Z' file.txt`
+
+52. cut: Remove sections from lines of files.
+    Example: `cut -d ',' -f 1 file.txt`
+
+53. du: Estimate file and directory space usage.
+    Example: `du -sh directory`
+
+54. scp: Copy files between local and remote machines.
+    Example: `scp file.txt user@remote_server:/path/to/destination`
+
+55. ssh: Connect to a remote server securely.
+    Example: `ssh user@remote_server`
+
+56. man: Display the manual page for a command.
+    Example: `man ls`
+
+57. info: View command information and documentation.
+    Example: `info command_name`
+
+58. apt-get: Package handling utility for Debian-based systems.
+    Example: `apt-get install package_name`
+
+59. yum: Package manager for RPM-based systems.
+    Example: `yum install package_name`
+
+60. systemctl: Control the systemd system and service manager.
+    Example: `systemctl start service_name`
+
+61. service: Run a System V init script.
+    Example: `service service_name start`
+
+62. chown: Change file ownership.
+    Example: `chown user:group file.txt`
+
+63. chmod: Change file permissions.
+    Example: `chmod 755 file.txt`
+
+64. ln: Create hard or symbolic links.
+    Example: `ln -s /path/to/file link_name`
+
+65. tee: Redirect output to multiple files or commands.
+    Example: `command | tee file.txt`
+
+66. fg: Bring a background process to the foreground.
+    Example: `fg %1`
+
+67. bg: Send a process to the background.
+    Example: `bg %1`
+
+68. alias: Create an alias for a command.
+    Example: `alias l='ls -l'`
+
+69. source: Execute commands from a file in the current shell.
+    Example: `source script.sh`
+
+70. echo: Print a message.
+    Example: `echo "Hello, world!"`
+
+71. export: Set environment variables.
+    Example: `
+
+export VARIABLE_NAME=value`
+
+72. env: Display the current environment variables.
+    Example: `env`
+
+73. sleep: Delay for a specified amount of time.
+    Example: `sleep 5` (sleep for 5 seconds)
+
+74. su: Switch user or become superuser.
+    Example: `su username` or `su -` (switch to root user)
+
+75. sudo: Execute a command as the superuser.
+    Example: `sudo command_name`
+
+76. passwd: Change user password.
+    Example: `passwd username`
+
+77. useradd: Create a new user.
+    Example: `useradd username`
+
+78. usermod: Modify user account settings.
+    Example: `usermod -aG group_name username`
+
+79. groupadd: Create a new group.
+    Example: `groupadd group_name`
+
+80. groupmod: Modify group settings.
+    Example: `groupmod -n new_group_name old_group_name`
+
+81. crontab: Schedule commands to run at specific times.
+    Example: `crontab -e` (edit cron jobs)
+
+82. at: Execute commands at a specified time.
+    Example: `at 10:00AM` (enter commands and press Ctrl+D)
+
+83. shutdown: Shutdown or restart the system.
+    Example: `shutdown now` (shutdown immediately)
+
+84. reboot: Reboot the system.
+    Example: `reboot`
+
+85. ifconfig: Display or configure network interfaces.
+    Example: `ifconfig`
+
+86. netstat: Network statistics.
+    Example: `netstat -an`
+
+87. ip: Show or manipulate routing, devices, policy routing, and tunnels.
+    Example: `ip addr show`
+
+88. route: Show or manipulate the IP routing table.
+    Example: `route -n`
+
+89. iptables: Administration tool for IPv4 packet filtering and NAT.
+    Example: `iptables -L` (list firewall rules)
+
+90. adduser: Interactive tool for adding new users.
+    Example: `adduser username`
+
+91. deluser: Remove a user account and associated files.
+    Example: `deluser username`
+
+92. passwd: Change user password.
+    Example: `passwd username`
+
+93. crontab: Schedule commands to run at specific times.
+    Example: `crontab -e` (edit cron jobs)
+
+94. history: View command history.
+    Example: `history`
+
+95. file: Determine file type.
+    Example: `file file.txt`
+
+96. hostname: Print or set the system's hostname.
+    Example: `hostname`
+
+97. uptime: Display the system's uptime.
+    Example: `uptime`
+
+98. dmesg: Print or control the kernel ring buffer.
+    Example: `dmesg`
+
+99. free: Display amount of free and used memory.
+    Example: `free -h`
+
+100. htop: Interactive process viewer and system monitor.
+     Example: `htop`
+
+Please note that the examples provided assume a general usage and may require modifications based on your specific system and file paths.
 
 These commands cover a wide range of tasks and utilities in Linux. Feel free to explore their options and further usage by referring to their respective man pages or online documentation.
