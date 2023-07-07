@@ -133,154 +133,154 @@ This repository provides a list of important Linux commands that are frequently 
 
 Sure! Here are 50 commonly used networking commands in Linux along with examples:
 
-1. ifconfig: Displays or configures network interfaces.
+1. `ifconfig`: Displays or configures network interfaces.
    Example: `ifconfig eth0`
 
-2. ip: Configures and displays network interfaces, routing tables, and more.
+2. `ip`: Configures and displays network interfaces, routing tables, and more.
    Example: `ip address show`
 
-3. ping: Sends ICMP echo requests to a specified network host.
+3. `ping`: Sends ICMP echo requests to a specified network host.
    Example: `ping google.com`
 
-4. traceroute: Displays the route packets take to reach a destination host.
+4. `traceroute`: Displays the route packets take to reach a destination host.
    Example: `traceroute google.com`
 
-5. nslookup: Queries DNS servers for DNS-related information.
+5. `nslookup`: Queries DNS servers for DNS-related information.
    Example: `nslookup google.com`
 
-6. dig: DNS lookup utility for querying DNS servers.
+6. `dig`: DNS lookup utility for querying DNS servers.
    Example: `dig google.com`
 
-7. host: Performs DNS lookups.
+7. `host`: Performs DNS lookups.
    Example: `host google.com`
 
-8. netstat: Displays network connections, routing tables, and network statistics.
+8. `netstat`: Displays network connections, routing tables, and network statistics.
    Example: `netstat -tun`
 
-9. ss: Provides detailed socket statistics.
+9. `ss`: Provides detailed socket statistics.
    Example: `ss -tun`
 
-10. route: Configures and displays routing table information.
+10. `route`: Configures and displays routing table information.
     Example: `route -n`
 
-11. arp: Manipulates or displays the ARP cache.
+11. `arp`: Manipulates or displays the ARP cache.
     Example: `arp -a`
 
-12. iptables: Manages firewall rules.
+12. `iptables`: Manages firewall rules.
     Example: `iptables -L`
 
-13. tcpdump: Captures network traffic.
+13. `tcpdump`: Captures network traffic.
     Example: `tcpdump -i eth0`
 
-14. ifup: Brings a network interface up.
+14. `ifup`: Brings a network interface up.
     Example: `ifup eth0`
 
-15. ifdown: Brings a network interface down.
+15. `ifdown`: Brings a network interface down.
     Example: `ifdown eth0`
 
-16. ethtool: Displays or changes Ethernet device settings.
+16. `ethtool`: Displays or changes Ethernet device settings.
     Example: `ethtool eth0`
 
-17. hostname: Displays or sets the system's hostname.
+17. `hostname`: Displays or sets the system's hostname.
     Example: `hostname`
 
-18. ssh: Connects to a remote server using the SSH protocol.
+18. `ssh`: Connects to a remote server using the SSH protocol.
     Example: `ssh user@hostname`
 
-19. scp: Copies files between hosts using SSH.
+19. `scp`: Copies files between hosts using SSH.
     Example: `scp file.txt user@hostname:/path/to/destination`
 
-20. rsync: Syncs files and directories between different locations.
+20. `rsync`: Syncs files and directories between different locations.
     Example: `rsync -avz source/ user@hostname:/path/to/destination`
 
-21. nc: Reads and writes data across network connections.
+21. `nc`: Reads and writes data across network connections.
     Example: `nc -l 8080`
 
-22. wget: Downloads files from the web.
+22. `wget`: Downloads files from the web.
     Example: `wget http://example.com/file.txt`
 
-23. curl: Transfers data to or from a server.
+23. `curl`: Transfers data to or from a server.
     Example: `curl http://example.com`
 
-24. nmap: Scans ports and discovers network services.
+24. `nmap`: Scans ports and discovers network services.
     Example: `nmap -p 1-1000 hostname`
 
-25. telnet: Establishes a telnet connection to a remote host.
+25. `telnet`: Establishes a telnet connection to a remote host.
     Example: `telnet hostname`
 
-26. ifstat: Displays network interface statistics.
+26. `ifstat`: Displays network interface statistics.
     Example: `ifstat`
 
-27. mtr: Combines ping and traceroute functionality.
+27. `mtr`: Combines ping and traceroute functionality.
     Example: `mtr google.com`
 
-28. route add: Adds a new route to the routing table.
+28. `route add`: Adds a new route to the routing table.
     Example: `route add -net 192.168.0.0/24 gw 192.168.1.1`
 
-29. route delete: Deletes a route from the routing table.
+29. `route delete`: Deletes a route from the routing table.
     Example: `route delete default gw 192.168.1.1`
 
-30. ifconfig up: Enables a network interface.
+30. `ifconfig up`: Enables a network interface.
     Example: `ifconfig eth0 up`
 
-31. ifconfig down: Disables a network interface.
+31. `ifconfig down`: Disables a network interface.
     Example: `ifconfig eth0 down`
 
-32. ip link: Manages network interfaces.
+32. `ip link`: Manages network interfaces.
     Example: `ip link show`
 
-33. ip route: Manages routing tables.
+33. `ip route`: Manages routing tables.
     Example: `ip route show`
 
-34. ip neigh: Manages ARP cache.
+34. `ip neigh`: Manages ARP cache.
     Example: `ip neigh show`
 
-35. ip addr: Manages IP addresses and interfaces.
+35. `ip addr`: Manages IP addresses and interfaces.
     Example: `ip addr show`
 
-36. ip link set: Modifies network interface properties.
+36. `ip link set`: Modifies network interface properties.
     Example: `ip link set eth0 mtu 1500`
 
-37. ip route add: Adds a new route to the routing table.
+37. `ip route add`: Adds a new route to the routing table.
     Example: `ip route add 192.168.0.0/24 via 192.168.1.1 dev eth0`
 
-38. ip route delete: Deletes a route from the routing table.
+38. `ip route delete`: Deletes a route from the routing table.
     Example: `ip route delete 192.168.0.0/24`
 
-39. ip addr add: Adds an IP address to an interface.
+39. `ip addr add`: Adds an IP address to an interface.
     Example: `ip addr add 192.168.0.1/24 dev eth0`
 
-40. ip addr delete: Deletes an IP address from an interface.
+40. `ip addr delete`: Deletes an IP address from an interface.
     Example: `ip addr delete 192.168.0.1/24 dev eth0`
 
-41. ip tunnel add: Creates a tunnel interface.
+41. `ip tunnel add`: Creates a tunnel interface.
     Example: `ip tunnel add mytunnel mode gre remote 203.0.113.1 local 198.51.100.1`
 
-42. ip tunnel delete: Deletes a tunnel interface.
+42. `ip tunnel delete`: Deletes a tunnel interface.
     Example: `ip tunnel delete mytunnel`
 
-43. ip link set promisc on: Puts a network interface into promiscuous mode.
+43. `ip link set promisc on`: Puts a network interface into promiscuous mode.
     Example: `ip link set eth0 promisc on`
 
-44. ip link set promisc off: Disables promiscuous mode on a network interface.
+44. `ip link set promisc off`: Disables promiscuous mode on a network interface.
     Example: `ip link set eth0 promisc off`
 
-45. ip link set mtu: Sets the Maximum Transmission Unit (MTU) of a network interface.
+45. `ip link set mtu`: Sets the Maximum Transmission Unit (MTU) of a network interface.
     Example: `ip link set eth0 mtu 1500`
 
-46. iptables -A INPUT: Appends a rule to the INPUT chain of the firewall.
+46. `iptables -A INPUT`: Appends a rule to the INPUT chain of the firewall.
     Example: `iptables -A INPUT -s 192.168.0.0/24 -j ACCEPT`
 
-47. iptables -D INPUT: Deletes a rule from the INPUT chain of the firewall.
+47. `iptables -D INPUT`: Deletes a rule from the INPUT chain of the firewall.
     Example: `iptables -D INPUT -s 192.168.0.0/24 -j ACCEPT`
 
-48. iptables -P: Sets the default policy for a chain in the firewall.
+48. `iptables -P`: Sets the default policy for a chain in the firewall.
     Example: `iptables -P INPUT DROP`
 
-49. iptables -F: Flushes all rules from a chain in the firewall.
+49. `iptables -F`: Flushes all rules from a chain in the firewall.
     Example: `iptables -F INPUT`
 
-50. iptables-save: Saves the current firewall rules to a file.
+50. `iptables-save`: Saves the current firewall rules to a file.
     Example: `iptables-save > firewall.rules`
 
 These commands cover a wide range of networking tasks and can be helpful for managing and troubleshooting network connections in Linux.
