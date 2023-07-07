@@ -129,9 +129,8 @@ This repository provides a list of important Linux commands that are frequently 
   - `tail -n N file_name`: Displays the last N lines of the specified file.
   - `tail -f file_name`: Continuously outputs new lines appended to the file.
 
-## Here are the top 20 networking commands in Linux:
+## Here are the top 50 networking commands in Linux:
 
-Sure! Here are 50 commonly used networking commands in Linux along with examples:
 
 1. `ifconfig`: Displays or configures network interfaces.
    Example: `ifconfig eth0`
