@@ -307,7 +307,7 @@ The `chmod` command is used to change permissions of files and directories. It s
    - Syntax: `chmod [options] [mode] file(s)`
 
    - Examples:
-     - Set read, write, and execute permissions for owner, group, and others: `chmod 755 script.sh`
+     - Set read, write, and execute permissions for owner, group, and others: `chmod 777 script.sh`
      - Restrict permissions to the owner only: `chmod 700 private.txt`
      - Grant full permissions to everyone: `chmod 777 public_dir`
 
