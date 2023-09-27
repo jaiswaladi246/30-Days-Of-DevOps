@@ -38,7 +38,7 @@ sudo tar -xvf apache-tomcat-9.0.65.tar.gz
 cd /opt/apache-tomcat-9.0.65/conf
 sudo vi tomcat-users.xml
 # ---add-below-line at the end (2nd-last line)----
-# <user username="admin" password="admin1234" roles="admin-gui, manager-gui"/>
+<user username="admin" password="admin1234" roles="admin-gui, manager-gui"/>
 
 sudo ln -s /opt/apache-tomcat-9.0.65/bin/startup.sh /usr/bin/startTomcat
 sudo ln -s /opt/apache-tomcat-9.0.65/bin/shutdown.sh /usr/bin/stopTomcat
@@ -59,6 +59,9 @@ sudo stopTomcat
 sudo startTomcat
 
 sudo cp target/*.war /opt/apache-tomcat-9.0.65/webapps/
+
+change the /opt/apache-tomcat-9.0.65/ ownership so other users can copy their war file
+sudo chown -R ubuntu /opt/apache-tomcat-9.0.65
 
 ```
 #### After copying the Artifact in webapps folder we can see the deployed application
